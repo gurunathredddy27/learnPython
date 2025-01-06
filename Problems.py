@@ -31,7 +31,7 @@ if __name__ == "__main__":
     ans = sum(arr)
     print("sum of the array is ", ans)
 
-BUBBLE SORT IN PYTHON
+#BUBBLE SORT IN PYTHON
 
 def bubble_sort(arr):
      n = len(arr)
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     bubble_sort(sample_list)
     print("sorted list:", sample_list)
 
-CALENDER
+#CALENDER
 import calendar
 
 yy = int(input("Enter year: "))
@@ -58,7 +58,7 @@ mm = int(input("Enter month: "))
 print(calendar.month(yy, mm))
 
 
-NUMBER IS POSITIVE OR NEGATIVE
+#NUMBER IS POSITIVE OR NEGATIVE
 
 def CheckNumber(n):
     if n>0:
@@ -71,14 +71,14 @@ def CheckNumber(n):
 n = int(input("Enter number: "))
 CheckNumber(n)
 
-EVEN OR ODD
+#EVEN OR ODD
 num = int(input("enter a Number: "))
 if (num%2) == 0:
     print("the number is even")
 else:
     print("the number is odd")
 
-CHECK THE NUMBER IS PRIME NUMBER
+#CHECK THE NUMBER IS PRIME NUMBER
 
 def primecheck(a):
     if a>1:
@@ -94,7 +94,7 @@ def primecheck(a):
 a = int(input("Enter an imput number: "))
 
 primecheck(a)
-AREA OF TRIANGLE
+#AREA OF TRIANGLE
 
 height = float(input("enter height: "))
 base = float(input("enter base"))
@@ -103,7 +103,7 @@ area = (1/2) *base *height
 print("the area of the triange is ", area)
 
 
-MILES TO KM 1mile is 1.6km
+#MILES TO KM 1mile is 1.6km
 
 km = float(input("enter km: "))
 miles = km * 0.621371
@@ -111,7 +111,7 @@ miles = km * 0.621371
 print(km, " km in miles ", miles)
 
 
-LEAP year
+#LEAP year
 
 year = int(input("enter a year: "))
 
@@ -122,12 +122,12 @@ elif(year % 4 ==0 ) and (year % 100 != 0):
 else:
    print(year, " is not a leap year")
 
-RANDOM NUMBER
+#RANDOM NUMBER
 
 import random
 print(random.randint(1,9))
 
-SWAP TWO NUMBER
+#SWAP TWO NUMBER
 
 x = 5
 y = 10
@@ -140,7 +140,7 @@ print('the value of x after swaping: {}'.format(x))
 print('the value of x after swaping: {}'.format(y))
 
 
-FIND THE LARGEST NUMBER
+#FIND THE LARGEST NUMBER
 num1 = int(input("enter number1: "))
 num2 = int(input("enter numebr2: "))
 num3 = int(input("enter number3: "))
@@ -152,7 +152,7 @@ elif(num2 >= num1) and (num2>= num3):
 else:
     print(num3, " largest")
 
-FACTORIAL
+#FACTORIAL
 
 num = int(input("enter a number: "))
 
@@ -162,13 +162,13 @@ if num > 0:
         factorial = factorial * i
 print("the factorial of number is ", factorial)
 
-TABLE
+#TABLE
 
 num = int(input("enter number: "))
 for i in range(1,11):
     print(num, "*", i, "=",num*i)
 
-FIBOBACCI SEQUENCE
+#FIBOBACCI SEQUENCE
 
 a = 0
 b = 1
@@ -188,7 +188,7 @@ for i in range(row):
     for j in range()
 
 
-FIND SUM OF NATURAL NUMBERS
+#FIND SUM OF NATURAL NUMBERS
 
 num = int(input("enter a number: "))
 
@@ -206,6 +206,11 @@ month = int(input("select month"))
 cal = calendar.month(year, month)
 print(cal)
 
+#ADD 3DIGIT NUMBER
 
-
-
+num = int(input("enter only 3digit number: "))
+while num > 999 or num <99:
+    print("choose 3digit number only")
+    break
+else:
+    print("you choose correct number:)")
