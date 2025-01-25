@@ -31,8 +31,9 @@ if __name__ == "__main__":
     ans = sum(arr)
     print("sum of the array is ", ans)
 
-#BUBBLE SORT IN PYTHON
 
+
+#BUBBLE SORT IN PYTHON
 def bubble_sort(arr):
      n = len(arr)
 
@@ -49,6 +50,8 @@ if __name__ == "__main__":
     bubble_sort(sample_list)
     print("sorted list:", sample_list)
 
+
+
 #CALENDER
 import calendar
 
@@ -56,6 +59,7 @@ yy = int(input("Enter year: "))
 mm = int(input("Enter month: "))
 
 print(calendar.month(yy, mm))
+
 
 
 #NUMBER IS POSITIVE OR NEGATIVE
@@ -71,6 +75,7 @@ def CheckNumber(n):
 n = int(input("Enter number: "))
 CheckNumber(n)
 
+
 #EVEN OR ODD
 num = int(input("enter a Number: "))
 if (num%2) == 0:
@@ -78,8 +83,10 @@ if (num%2) == 0:
 else:
     print("the number is odd")
 
-#CHECK THE NUMBER IS PRIME NUMBER
 
+
+
+#CHECK THE NUMBER IS PRIME NUMBER
 def primecheck(a):
     if a>1:
         for i in range(2,int(a/2)+1):
@@ -180,13 +187,6 @@ for i in range (1, num+1):
      b = c
      print(c)
 
-#PATTERNS
-
-row = int(input('enter number of rows mama: '))
-
-for i in range(row):
-    for j in range()
-
 
 #FIND SUM OF NATURAL NUMBERS
 
@@ -214,3 +214,50 @@ while num > 999 or num <99:
     break
 else:
     print("you choose correct number:)")
+
+ALPHABET ORDER
+
+a = "Harry Potter and the Goblet of Fire"
+w = a.split()
+#print(w)
+for i in range (len(w)):
+    w[i] = w[i].lower()
+
+#print(w)
+w.sort()
+#print(w)
+
+for i in w:
+    print(i)
+
+#PATTERNS
+
+row = int(input('enter number of rows mama: '))
+
+for i in range(row):
+    for j in range(i+1):
+        print(j+1, end= " ")
+    print()
+
+
+using multiple inputs
+
+a,b,c = input("Enter three number: ").split()
+print("the adddition of the numbers is: ")
+print(int(a)+int(b)+int(c))
+
+
+palindrom
+
+text = input("enter: ")
+text_repl = text.replace(" ", "").lower()
+
+if text == text_repl[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")
+
+
+data = input("enter name: ")
+res = data.replace("a", "*", 5)
+print(res)
