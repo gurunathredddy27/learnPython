@@ -1,4 +1,4 @@
-#simple Interst PTR/100
+          #simple Interst PTR/100
 
 def simple_interse(p,t,r):
     print("the princple is ", p)
@@ -16,7 +16,7 @@ R = int(input("enter the rate of interest"))
 simple_interse(P,T,R)
 
 
-#sum of ARRAY
+                  #sum of ARRAY
 
 def sum(arr):
     sum = 0
@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
 
 
-#BUBBLE SORT IN PYTHON
+                  #BUBBLE SORT IN PYTHON
 def bubble_sort(arr):
      n = len(arr)
 
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 
 
 
-#CALENDER
+                      #CALENDER
 import calendar
 
 yy = int(input("Enter year: "))
@@ -62,7 +62,7 @@ print(calendar.month(yy, mm))
 
 
 
-#NUMBER IS POSITIVE OR NEGATIVE
+                      #NUMBER IS POSITIVE OR NEGATIVE
 
 def CheckNumber(n):
     if n>0:
@@ -76,7 +76,7 @@ n = int(input("Enter number: "))
 CheckNumber(n)
 
 
-#EVEN OR ODD
+                          #EVEN OR ODD
 num = int(input("enter a Number: "))
 if (num%2) == 0:
     print("the number is even")
@@ -86,7 +86,7 @@ else:
 
 
 
-#CHECK THE NUMBER IS PRIME NUMBER
+                       #CHECK THE NUMBER IS PRIME NUMBER
 def primecheck(a):
     if a>1:
         for i in range(2,int(a/2)+1):
@@ -110,7 +110,7 @@ area = (1/2) *base *height
 print("the area of the triange is ", area)
 
 
-#MILES TO KM 1mile is 1.6km
+                  #MILES TO KM 1mile is 1.6km
 
 km = float(input("enter km: "))
 miles = km * 0.621371
@@ -118,7 +118,7 @@ miles = km * 0.621371
 print(km, " km in miles ", miles)
 
 
-#LEAP year
+                      #LEAP year
 
 year = int(input("enter a year: "))
 
@@ -129,12 +129,12 @@ elif(year % 4 ==0 ) and (year % 100 != 0):
 else:
    print(year, " is not a leap year")
 
-#RANDOM NUMBER
+                      #RANDOM NUMBER
 
 import random
 print(random.randint(1,9))
 
-#SWAP TWO NUMBER
+                      #SWAP TWO NUMBER
 
 x = 5
 y = 10
@@ -147,7 +147,7 @@ print('the value of x after swaping: {}'.format(x))
 print('the value of x after swaping: {}'.format(y))
 
 
-#FIND THE LARGEST NUMBER
+                      #FIND THE LARGEST NUMBER
 num1 = int(input("enter number1: "))
 num2 = int(input("enter numebr2: "))
 num3 = int(input("enter number3: "))
@@ -159,7 +159,7 @@ elif(num2 >= num1) and (num2>= num3):
 else:
     print(num3, " largest")
 
-#FACTORIAL
+                          #FACTORIAL
 
 num = int(input("enter a number: "))
 
@@ -175,7 +175,7 @@ num = int(input("enter number: "))
 for i in range(1,11):
     print(num, "*", i, "=",num*i)
 
-#FIBOBACCI SEQUENCE
+                        FIBOBACCI SEQUENCE
 
 a = 0
 b = 1
@@ -188,7 +188,7 @@ for i in range (1, num+1):
      print(c)
 
 
-#FIND SUM OF NATURAL NUMBERS
+                      #FIND SUM OF NATURAL NUMBERS
 
 num = int(input("enter a number: "))
 
@@ -206,7 +206,7 @@ month = int(input("select month"))
 cal = calendar.month(year, month)
 print(cal)
 
-#ADD 3DIGIT NUMBER
+                  #ADD 3DIGIT NUMBER
 
 num = int(input("enter only 3digit number: "))
 while num > 999 or num <99:
@@ -230,7 +230,7 @@ w.sort()
 for i in w:
     print(i)
 
-#PATTERNS
+                          #PATTERNS
 
 row = int(input('enter number of rows mama: '))
 
@@ -240,14 +240,14 @@ for i in range(row):
     print()
 
 
-using multiple inputs
+#using multiple inputs
 
 a,b,c = input("Enter three number: ").split()
 print("the adddition of the numbers is: ")
 print(int(a)+int(b)+int(c))
 
 
-palindrom
+                              # palindrom
 
 text = input("enter: ")
 text_repl = text.replace(" ", "").lower()
@@ -261,3 +261,100 @@ else:
 data = input("enter name: ")
 res = data.replace("a", "*", 5)
 print(res)
+
+                       # reverse string
+str = input("name: ")
+def reverse_string(str):
+    str1 = ""
+    for i in str:
+        str1 = i + str1
+    return str1
+# str = "java point"
+print("the original string: ",str)
+print("the reverse string: ", reverse_string(str))
+
+
+def first_last(numberList):
+    print("given list: ", numberList)
+
+    first_num = numberList[0]
+    last_num = numberList[-2]
+
+    if first_num == last_num:
+        return True
+    else:
+        return False
+
+num1 = [10,20,30,40,10]
+print("result is ", first_last(num1))
+
+num2 = [10,20,30,10,50]
+print("result is ", first_last(num2))
+
+#divisible by 3
+
+for i in range(1,100):
+    if i % 3 == 0:
+        print(i, '*' )
+
+
+
+previous_num = 0
+for i in range(0,11):
+    sum = previous_num + i
+    print("previous ", previous_num, "current ", i, "sum=", sum )
+    previous_num = i
+
+
+            #merge LIST
+def merge_list(list1, list2):
+    result = []
+
+    for num in list1:
+        if num < 50:
+            result.append(num)
+
+    for num in list2:
+        if num > 50:
+            result.append(num)
+    return result
+
+list1 = [10,80,25,55,35]
+list2 = [40,45,40,35,90]
+print("return list: ",merge_list(list1,list2))
+
+
+income = 300000
+tax_payable = 0
+print("income is ", income)
+
+if income <= 10000:
+    tax_payable = 0
+
+elif income <= 20000:
+    x = income - 10000
+    tax_payable = x * 10 / 100
+
+else:
+    tax_payable = 0
+    tax_payable = 10000 * 10 / 100
+    tax_payable += (income-20000) * 20/ 100
+
+print("tax ", tax_payable)
+
+
+
+for i in range(6,0,-1):
+    for j in range(0,i,-1):
+        print("*", end=' ')
+    print(" ")
+
+
+
+
+
+
+
+
+
+
